@@ -51,3 +51,192 @@ table {
 
 
 /* Write your css below here */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.head-container{
+	position: fixed;
+	width: 100%;
+	/* background-color: rgb(43, 9, 9); */
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.hand{
+	display: none;
+}
+
+.hand img{
+	height:100px;
+	width: 80px;
+	border-radius: 30%;
+}
+
+header{
+	border: 2px solid #262121;
+	display: flex;
+	background-color: #1c1717;
+	color: aliceblue;
+	height: 4rem;
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+	font-size: xx-large;
+	border-radius: 50px;
+
+}
+
+main{
+	background: linear-gradient(to top, brown, 70%, black);
+	color: aliceblue;
+	padding: 150px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile img{
+	height: 350px;
+	width: 100%;
+	border-radius: 50px;
+	border: 2px solid goldenrod;
+}
+
+.profile{
+	width: 100%;
+	padding-top: 30px;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.projects{
+	padding-top: 200px;
+	flex: 3;
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	flex-direction: column;
+}
+
+.badsite{
+	width: 90%;
+	height: 250px;
+	border: 0.5px solid red;
+	background: linear-gradient(to bottom, brown, 70%, black);
+	color: black;
+	display: flex;
+	border-radius: 40px;
+	
+}
+
+.badimg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+.badimg img{
+	width: 80%;
+	height: 50%;
+	border-radius: 36px;
+}
+
+.badtext{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	justify-content: center;
+}
+
+.languages{
+	width: 70%;
+	display: flex;
+	height: 60px;
+	align-items: center;
+	background: linear-gradient(to right, brown, 40%, black);
+	border: 1px solid rgb(121, 92, 18);
+	border-radius: 40px;
+	justify-content: center;
+}
+
+footer{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+	color: aliceblue;
+	background-color: black;
+	padding: 30px;
+}
+
+.footer-left{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.contact-me{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+form{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 90%;
+}
+
+.social-media{
+	display: flex;gap: 20px;
+}
+
+button{
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: rgb(63, 77, 41);
+}
+
+form input, form textarea, form button{
+	padding: 10px;
+	background-color: grey;
+	font-size: large;
+}
+
+
+@media screen and (width >=700px) {
+	footer{
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	main{
+		flex-direction: row;
+	}
+	
+	form{
+		width: 90%;
+}
+
+.hand{
+	display: block;
+	
+}
+.head-container{
+	display: flex;
+	justify-content: space-between;
+}
+}
